@@ -1,11 +1,10 @@
-import styles from "./styles/components/_button.module.scss";
+import Header from "./components/Header";
 
 function App() {
 	return (
 		<>
-			<h1>TEST</h1>
-			<button className={styles.primary}>click here</button>
-			<button className={styles.secondary}>click here</button>
+			<Header />
+			<p>this is the home page</p>
 		</>
 	);
 }
