@@ -1,0 +1,39 @@
+@use "../utilities/" as *;
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	line-height: 1.1;
+}
+
+h1,
+h2 {
+	font-size: rem(60);
+	font-weight: 700;
+}
+
+h3 {
+	font-size: rem(22);
+	font-weight: 700;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+@media screen and (max-width: rem(768)) {
+	h1,
+	h2 {
+		font-size: rem(50);
+	}
+}
+
+@media screen and (max-width: rem(425)) {
+	h1,
+	h2 {
+		font-size: rem(32);
+	}
+}

@@ -1,0 +1,13 @@
+@use "../utilities/" as *;
+
+button {
+	padding: rem(10);
+
+	&.primary {
+		background-color: red;
+	}
+
+	&.secondary {
+		background-color: green;
+	}
+}
