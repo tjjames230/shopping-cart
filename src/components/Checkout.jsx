@@ -1,14 +1,14 @@
 import Header from "./Header";
 
-const Shop = ({ cart }) => {
+const Checkout = ({ cart }) => {
 	return (
 		<>
 			<Header cart={cart} />
 			<div>
-				<h2>this is the shop page</h2>
+				<h2>this is the checkout page</h2>
 			</div>
 		</>
 	);
 };
 
-export default Shop;
+export default Checkout;

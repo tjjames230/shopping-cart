@@ -1,10 +1,10 @@
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = ({ cart }) => {
 	return (
-		<header>
+		<header className="content-padding">
 			<h1>SHOPPING CART</h1>
-			<Navbar />
+			<Navbar cart={cart} />
 		</header>
 	);
 };

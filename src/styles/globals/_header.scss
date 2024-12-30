@@ -1,3 +1,24 @@
+@use "../utilities/" as *;
+
 header {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background-color: rgb(37, 37, 37);
+}
+
+nav {
+	ul {
+		display: flex;
+		gap: rem(24);
+
+		.link {
+			color: white;
+		}
+
+		.link:hover {
+			color: blue;
+		}
+	}
 }
