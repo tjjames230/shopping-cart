@@ -7,15 +7,19 @@ h3 {
 	line-height: 1.1;
 }
 
-h1,
+h1 {
+	font-size: rem(36);
+	font-weight: 600;
+}
+
 h2 {
-	font-size: rem(60);
-	font-weight: 700;
+	font-size: rem(30);
+	font-weight: 400;
 }
 
 h3 {
 	font-size: rem(22);
-	font-weight: 700;
+	font-weight: 600;
 }
 
 a,

@@ -1,19 +1,10 @@
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Header = () => {
 	return (
 		<header>
-			<h2>SHOPPING CART</h2>
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">HOME</Link>
-					</li>
-					<li>
-						<Link to="/shop">SHOP</Link>
-					</li>
-				</ul>
-			</nav>
+			<h1>SHOPPING CART</h1>
+			<Navbar />
 		</header>
 	);
 };
