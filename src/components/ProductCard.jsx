@@ -1,4 +1,6 @@
 import styles from "../styles/components/_products.module.scss";
+import buttons from "../styles/components/_button.module.scss";
+
 import { useRef } from "react";
 
 const ProductCard = () => {
@@ -18,13 +20,13 @@ const ProductCard = () => {
 
 	return (
 		<div className={styles["product-card"]}>
-			<div>
+			<div className={styles["img-ctn"]}>
 				<img src="" alt="image" />
 			</div>
 			<h3>Product Title</h3>
-			<div>
+			<div className={styles["price-quantity"]}>
 				<p>PRICE</p>
-				<div>
+				<div className={styles["quantity-ctn"]}>
 					<input
 						type="number"
 						name=""
@@ -33,10 +35,15 @@ const ProductCard = () => {
 						min="0"
 						ref={inputRef}
 					/>
-					<p onClick={handleStepUp}>+</p>
-					<p onClick={handleStepDown}>-</p>
+					<button className={buttons.up} onClick={handleStepUp}>
+						+
+					</button>
+					<button className={buttons.down} onClick={handleStepDown}>
+						-
+					</button>
 				</div>
 			</div>
+			<button>ADD TO CART</button>
 		</div>
 	);
 };
