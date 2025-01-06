@@ -30,7 +30,7 @@ const ProductCard = ({ cart, setCart, product }) => {
 	return (
 		<div className={styles["product-card"]}>
 			<picture className={styles["img-ctn"]}>
-				<img src="" alt="image" />
+				<img src={product.image} alt="image" />
 			</picture>
 			<h3 className={styles["product-title"]}>{product.title}</h3>
 			<div className={styles["price-quantity"]}>

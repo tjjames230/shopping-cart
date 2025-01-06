@@ -14,9 +14,17 @@
 	gap: rem(16);
 
 	.img-ctn {
-		background-color: black;
+		background-color: white;
 		height: rem(300);
 		width: rem(300);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 75%;
+			max-height: 75%;
+		}
 	}
 
 	.product-title {
