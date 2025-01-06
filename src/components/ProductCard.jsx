@@ -52,7 +52,9 @@ const ProductCard = ({ cart, setCart, product }) => {
 					</button>
 				</div>
 			</div>
-			<button onClick={handleAddToCart}>ADD TO CART</button>
+			<button className={buttons.cart} onClick={handleAddToCart}>
+				ADD TO CART
+			</button>
 		</div>
 	);
 };
