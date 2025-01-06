@@ -2,10 +2,10 @@ import Header from "./Header";
 import ProductCard from "./ProductCard";
 import styles from "../styles/components/_products.module.scss";
 
-const Shop = ({ cart }) => {
+const Shop = ({ cart, setCart }) => {
 	const productAmt = [1, 2, 3, 4, 5];
 	const products = productAmt.map((index) => {
-		return <ProductCard key={index} />;
+		return <ProductCard key={index} cart={cart} setCart={setCart} />;
 	});
 
 	return (

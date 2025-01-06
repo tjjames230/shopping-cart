@@ -3,7 +3,7 @@ import buttons from "../styles/components/_button.module.scss";
 
 import { useRef } from "react";
 
-const ProductCard = () => {
+const ProductCard = ({ cart, setCart }) => {
 	const inputRef = useRef(null);
 
 	const handleStepUp = () => {
@@ -18,11 +18,20 @@ const ProductCard = () => {
 		}
 	};
 
+	const handleAddToCart = () => {
+		const quantity = Number(inputRef.current.value);
+		setCart(() => {
+			let tempCart = Number(cart);
+			return tempCart + quantity;
+		});
+		inputRef.current.value = 0;
+	};
+
 	return (
 		<div className={styles["product-card"]}>
-			<div className={styles["img-ctn"]}>
+			<picture className={styles["img-ctn"]}>
 				<img src="" alt="image" />
-			</div>
+			</picture>
 			<h3>Product Title</h3>
 			<div className={styles["price-quantity"]}>
 				<p>PRICE</p>
@@ -43,7 +52,7 @@ const ProductCard = () => {
 					</button>
 				</div>
 			</div>
-			<button>ADD TO CART</button>
+			<button onClick={handleAddToCart}>ADD TO CART</button>
 		</div>
 	);
 };
