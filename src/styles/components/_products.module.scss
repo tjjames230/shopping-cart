@@ -19,6 +19,10 @@
 		width: rem(300);
 	}
 
+	.product-title {
+		max-width: rem(300);
+	}
+
 	.price-quantity {
 		display: flex;
 		justify-content: space-between;

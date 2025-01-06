@@ -3,7 +3,7 @@ import buttons from "../styles/components/_button.module.scss";
 
 import { useRef } from "react";
 
-const ProductCard = ({ cart, setCart }) => {
+const ProductCard = ({ cart, setCart, product }) => {
 	const inputRef = useRef(null);
 
 	const handleStepUp = () => {
@@ -32,9 +32,9 @@ const ProductCard = ({ cart, setCart }) => {
 			<picture className={styles["img-ctn"]}>
 				<img src="" alt="image" />
 			</picture>
-			<h3>Product Title</h3>
+			<h3 className={styles["product-title"]}>{product.title}</h3>
 			<div className={styles["price-quantity"]}>
-				<p>PRICE</p>
+				<p>${product.price}</p>
 				<div className={styles["quantity-ctn"]}>
 					<input
 						type="number"
