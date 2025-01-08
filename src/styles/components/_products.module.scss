@@ -8,7 +8,7 @@
 
 .product-card {
 	background-color: rgb(90, 90, 90);
-	padding: rem(10);
+	padding: rem(16);
 	display: flex;
 	flex-direction: column;
 	gap: rem(16);
@@ -42,6 +42,10 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-top: auto;
+	}
+
+	.pricing {
+		font-size: rem(20);
 	}
 
 	.quantity-ctn {

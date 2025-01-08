@@ -34,7 +34,9 @@ const ProductCard = ({ cart, setCart, product }) => {
 			</picture>
 			<h3 className={styles["product-title"]}>{product.title}</h3>
 			<div className={styles["price-quantity"]}>
-				<p>${product.price}</p>
+				<p className={styles["pricing"]}>
+					${parseFloat(product.price).toFixed(2)}
+				</p>
 				<div className={styles["quantity-ctn"]}>
 					<input
 						type="number"
